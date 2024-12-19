@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game-jaime</title>
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static "js/bron.js" %}"
+    />
+    <link rel="stylesheet" href="{% static "css/bron.css" %}" />
+    <style>
+      .container {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+          margin: 20px;
+      }
+      .card {
+          border: 1px solid #ddd;
+          border-radius: 8px;
+          padding: 20px;
+          width: 200px;
+          text-align: center;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .card.vip {
+          background-color: #ffda83;
+      }
+      .card.reserved {
+          border-color: red;
+      }
+      .status {
+          margin-top: 10px;
+          font-weight: bold;
+      }
+  </style>
+  </head>
+  <body>
+    <div class="scheme container">
+
+      <h1>Список компьютеров</h1>
+    <div class="container">
+        {% for computer in computers %}
+        <div class="card {% if computer.is_vip %}vip{% endif %} {% if computer.status == 'reserved' %}reserved{% endif %}">
+          {% if computer.status == 'reserved' %}
+            <p>{{ computer.name }}</p>
+          {% else %}
+          <a href="{% url 'sale' computer.id %}">{{ computer.name }}</a>
+          {% endif %}
+            <p>{{ computer.is_vip|yesno:"VIP,Стандартный" }}</p>
+            <p class="status">
+                {% if computer.status == 'reserved' %}
+                    Зарезервировано {{ computer.reserved_by.username }}
+                {% else %}
+                    Свободно
+                {% endif %}
+            </p>
+            <p>
+              Price : {{ computer.hourly_rate }} руб.
+            </p>  
+        </div>
+        {% endfor %}
+    </div>
+
+        
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="{% static "js/bron.js" %}"></script>
+  </body>
+</html>

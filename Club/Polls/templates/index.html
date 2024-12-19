@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamics - Create Manage Matches</title>
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="{% static "css/style.css" %}">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header">
+
+    <div class="header-top">
+      <div class="container">
+
+        <div class="social-wrapper">
+
+          <p class="social-title">мы в соц сетях:</p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li> 
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+
+        <a href="#" class="logo">Game-Jaime</a>
+
+        <nav class="navbar" data-navbar>
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link skewBg" data-nav-link>Главная</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#live" class="navbar-link skewBg" data-nav-link>Матчи в прямом эфире</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#features" class="navbar-link skewBg" data-nav-link>Игры в нашем клубе</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#shop" class="navbar-link skewBg" data-nav-link>Наш магазин</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#blog" class="navbar-link skewBg" data-nav-link>Последние новости</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-link skewBg" data-nav-link>Контакты</a>
+            </li>
+
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #SEARCH BOX
+  -->
+
+  <div class="search-container" data-search-box>
+
+    <div class="input-wrapper">
+      <input type="search" name="search" aria-label="search" placeholder="Search here..." class="search-field">
+
+      <button class="search-submit" aria-label="submit search" data-search-toggler>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <button class="search-close" aria-label="close search" data-search-toggler></button>
+    </div>
+
+  </div>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home"
+        style="background-image: url('{% static "images/hero-bg.jpg" %}')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <p class="hero-subtitle">Копьютерный клуб Game-Jaime</p>
+
+            <h1 class="h1 hero-title">
+              Узнайте <span class="span">о нас</span> больше
+            </h1>
+
+            <p class="hero-text">
+              На нашем сайте вы можете посмотреть в прямом эфире киберспортивные матчи, узнать самые актуальные цены на новинки (так же можно и купить игры по выгодным ценам от наших партнеров) или можете просто поиграть на наших крутых компьютерах.
+            </p>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 700; --height: 700;">
+            <img src="{% static "images/Daco_5834311.png" %}" width="700" height="700" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BRAND
+      -->
+
+      <section class="section brand" aria-label="brand">
+        <div class="container">
+
+          <ul class="has-scrollbar">
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-1.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-2.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-3.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-4.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-5.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+            <li class="brand-item">
+              <img src="{% static "images/brand-6.png" %}" width="90" height="90" loading="lazy" alt="brand logo">
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <div class="section-wrapper">
+
+        <!-- 
+          - #LATEST GAME
+        -->
+
+        <section class="section latest-game" aria-label="latest game">
+          <div class="container">
+
+            <h2 class="h2 section-title">
+              Последние <span class="span">новинки</span>
+            </h2>
+
+            <ul class="has-scrollbar">
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="{% static "images/rdr.jpg" %}" width="400" height="470" loading="lazy"
+                      alt="White Walker Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Red dead redemption <span class="span">Ⅱ</span></a>
+                    </h3>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="{% static "images/ghost.jpg" %}" width="400" height="470" loading="lazy"
+                      alt="Hunter Killer II" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Ghost of Tsushima <span class="span"></span></a>
+                    </h3>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+              <li class="scrollbar-item">
+                <div class="latest-game-card">
+
+                  <figure class="card-banner img-holder" style="--width: 400; --height: 470;">
+                    <img src="{% static "images/cyberpunk-2077.jpg" %}" width="40" height="47" loading="lazy"
+                      alt="Cyberpunk Daily" class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+
+                    <h3 class="h3">
+                      <a href="#" class="card-title">Cyberpunk <span class="span">2077</span></a>
+                    </h3>
+
+
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #LIVE MATCH
+        -->
+
+        <section class="section live-match" id="live" aria-label="live match">
+          <div class="container">
+
+            <h2 class="h2 section-title">
+              Посмотреть  прямой эфир <span class="span"></span>
+            </h2>
+
+            <figure class="live-match-banner img-holder" style="--width: 800; --height: 470;">
+
+              <img src="{% static "images/live-match-banner.jpg" %}" width="800" height="470" loading="lazy"
+                alt="Live Match Video" class="img-cover">
+
+              <button class="play-btn" aria-label="play video">
+                <ion-icon name="play"></ion-icon>
+              </button>
+
+            </figure>
+
+            <div class="live-match-player">
+
+              <figure class="player player-1 img-holder" style="--width: 406; --height: 277;">
+                <img src="{% static "images/live-match-player-1.png" %}" width="406" height="277" loading="lazy"
+                  alt="tokyo eagle" class="w-100">
+              </figure>
+
+              <div class="live-match-detail">
+
+                <p class="live-match-subtitle">Начало следующего матча</p>
+
+                <time class="live-match-time" datetime="08:30">08:30</time>
+
+              </div>
+
+              <figure class="player player-2 img-holder" style="--width: 400; --height: 305;">
+                <img src="{% static "images/live-match-player-2.png" %}" width="400" height="305" loading="lazy"
+                  alt="new york hunter7" class="w-100">
+              </figure>
+
+            </div>
+
+          </div>
+        </section>
+
+      </div>
+
+
+
+
+
+      <!-- 
+        - #FEATURED GAME
+      -->
+
+      <section class="section featured-game" id="features" aria-label="featured game">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Игры в которые вы можете поиграть в нашем компьютерном клубе <span class="span">Game-Jaime</span>
+          </h2>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="{% static "images/i.webp" %}" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      counter strike <span class="span">2</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">PC</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="{% static "images/featured-game-icon.png" %}" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      шутеры<span class="span"></span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">PC</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="{% static "images/blog-1.jpg" %}" width="450" height="600" loading="lazy"
+                    alt="Need for Speed" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Need for <span class="span">Speed</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 4, 5, PC</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="{% static "images/featured-game-icon.png" %}" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      гонки <span class="span"></span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 4, 5, PC</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="{% static "images/pubg.jpg" %}" width="450" height="600" loading="lazy"
+                    alt="Egypt Hunting Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      PUBG<span class="span"></span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span"> PC</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="{% static "images/featured-game-icon.png" %}" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      королевские <span class="span">битвы</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">PC</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="featured-game-card">
+
+                <figure class="card-banner img-holder" style="--width: 450; --height: 600;">
+                  <img src="{% static "images/mk.webp" %}" width="450" height="600" loading="lazy"
+                    alt="Just for Gamers" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title" tabindex="-1">
+                      Mortal <span class="span">Combat</span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 4, 5</span>
+                  </span>
+
+                </div>
+
+                <div class="card-content-overlay">
+
+                  <img src="{% static "images/featured-game-icon.png" %}" width="36" height="61" loading="lazy" alt=""
+                    class="card-icon">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Боевики<span class="span"></span>
+                    </a>
+                  </h3>
+
+                  <span class="card-meta">
+                    <ion-icon name="notifications"></ion-icon>
+
+                    <span class="span">Playstation 4, 5</span>
+                  </span>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SHOP
+      -->
+
+      <section class="section shop" id="shop" aria-label="shop"
+        style="background-image: url('{% static "images/shop-bg.jpg" %}')">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Уголок товаров <span class="span"></span>
+          </h2>
+
+          <p class="section-text">
+            Продукция которая продается у нас 
+          </p>
+
+          <ul class="has-scrollbar">
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="{% static "images/energos.png" %}" width="300" height="260" loading="lazy"
+                    alt="energos" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Энергетики</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Энергетические напитки</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">от 100 руб.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="{% static "images/zlack.png" %}" width="300" height="260" loading="lazy"
+                    alt="zlack" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Перекус</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Злаковые батончики и другой перекус</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">от 50 руб.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="{% static "images/water.jpg" %}" width="300" height="260" loading="lazy"
+                    alt="water" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Вода</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Охлаждающие напитки</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">от 70 руб.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+            <li class="scrollbar-item">
+              <div class="shop-card">
+
+                <figure class="card-banner img-holder" style="--width: 300; --height: 260;">
+                  <img src="{% static "images/pizza.jpg" %}" width="300" height="260" loading="lazy"
+                    alt="pizza" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <a href="#" class="card-badge skewBg">Горячая еда</a>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Пицца, бургеры, суши. Для игровых сессий</a>
+                  </h3>
+
+                  <div class="card-wrapper">
+                    <p class="card-price">от 200 руб.</p>
+
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+      <section class="section blog" id="blog" aria-label="blog">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+             Последние <span class="span">новости</span>
+          </h2>
+
+          <p class="section-text">
+            Последние новости в игровой индустрии 
+          </p>
+
+          <ul class="blog-list">
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
+                  <img src="{% static "images/got of war.webp" %}" width="400" height="290" loading="lazy"
+                    alt="Shooter Action Video" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <a href="#" class="item-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time datetime="2022-09-19" class="item-text">31.05.2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3>
+                    <a href="https://www.playground.ru/god_of_war_ragnarok/news/kompaniya_sony_ofitsialno_anonsirovala_pk_versiyu_god_of_war_ragnarok-1702543" class="card-title">Компания Sony официально анонсировала ПК-версию God of War Ragnarok </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Наконец-то свершилось! 31 мая 2024 года во время трансляции State of Play компания Sony официально анонсировала ПК-версию долгожданного сиквела God of War - Ragnarok. Ранее игра была доступна только на PlayStation 4 и PlayStation 5. Игра выйдет на ПК уже 19 сентября 2024 года.
+                  </p>
+
+                  <a href="https://www.playground.ru/god_of_war_ragnarok/news/kompaniya_sony_ofitsialno_anonsirovala_pk_versiyu_god_of_war_ragnarok-1702543" class="card-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="caret-forward"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
+                  <img src="{% static "images/spider.jpeg" %}" width="400" height="290" loading="lazy" alt="The Walking Dead"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <a href="#" class="item-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time datetime="2022-09-19" class="item-text">31.05.2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3>
+                    <a href="https://www.playground.ru/marvels_midnight_suns/news/v_egs_so_sleduyuschej_nedeli_mozhno_budet_besplatno_zabrat_marvels_midnight_suns-1702621" class="card-title">В EGS со следующей недели можно будет бесплатно забрать Marvel's Midnight Suns </a>
+                  </h3>
+
+                  <p class="card-text">
+                    Утверждается, что Marvel's Midnight Suns будет доступна бесплатно в Epic Games Store в рамках Mega Sale 2024.
+                  </p>
+
+                  <a href="https://www.playground.ru/marvels_midnight_suns/news/v_egs_so_sleduyuschej_nedeli_mozhno_budet_besplatno_zabrat_marvels_midnight_suns-1702621" class="card-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="caret-forward"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="blog-card">
+
+                <figure class="card-banner img-holder" style="--width: 400; --height: 290;">
+                  <img src="{% static "images/litle nightmers.jpeg" %}" width="400" height="290" loading="lazy"
+                    alt="Defense Of The Ancients" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="person-outline"></ion-icon>
+
+                      <a href="#" class="item-text">Admin</a>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline"></ion-icon>
+
+                      <time datetime="2022-09-19" class="item-text">31.05.2024</time>
+                    </li>
+
+                  </ul>
+
+                  <h3>
+                    <a href="https://www.playground.ru/little_nightmares_3/news/little_nightmares_3_pereehala_na_2025_god_no_igru_pokazhut_etim_letom-1702664" class="card-title">Little Nightmares 3 переехала на 2025 год, но игру покажут этим летом</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Разработчики из Supermassive Games и издатель Bandai Namco опубликовали в Твиттере/Х сообщение, касающееся грядущей Little Nightmares 3. Команды сообщили, что в этом году выход игры ждать не стоит, но о ней обязательно расскажут этим летом, вероятно, во время различных презентаций.
+                  </p>
+
+                  <a href="https://www.playground.ru/little_nightmares_3/news/little_nightmares_3_pereehala_na_2025_god_no_igru_pokazhut_etim_letom-1702664" class="card-link">
+                    <span class="span">Read More</span>
+
+                    <ion-icon name="caret-forward"></ion-icon>
+                  </a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #NEWSLETTER
+      -->
+
+      <section class="newsletter" aria-label="newsletter">
+        <div class="container">
+
+          <div class="newsletter-card">
+
+            <h2 class="h2">
+              обратная <span class="span">Связь</span>
+            </h2>
+
+            <form action="" class="newsletter-form">
+
+              <div class="input-wrapper skewBg">
+                <input type="email" name="email_address" aria-label="email" placeholder="Enter your email..." required
+                  class="email-field">
+
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <button type="submit" class="btn newsletter-btn skewBg">
+                <span class="span">Subscribe</span>
+
+                <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer" aria-label="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">Game-Jaime</a>
+
+          <p class="footer-text">
+           Наши данные :
+          </p>
+
+          <ul class="contact-list">
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="location"></ion-icon>
+              </div>
+
+              <address class="item-text">
+                <a href="https://www.google.ru/maps/place/%D0%92%D0%BE+%D0%9F%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0+%D0%B4%D0%BE%D0%BC+%D0%BA%D0%BE%D0%BB%D0%BE%D1%82%D1%83%D1%88%D0%BA%D0%B8%D0%BD%D0%B0/@55.0292823,36.3887756,17z/data=!3m1!4b1!4m6!3m5!1s0x46cad57996c3522f:0x6d3aaaef8db6fa8!8m2!3d55.0292823!4d36.3913505!16s%2Fg%2F11n83k1qt1?entry=ttu">Наш адрес: улица Пушкина дом 2</a>
+              </address>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="headset"></ion-icon>
+              </div>
+
+              <a href="tel:+7 999 999 99 99" class="item-text">Phone : +7 999 999 99 99</a>
+            </li>
+
+            <li class="contact-item">
+              <div class="contact-icon">
+                <ion-icon name="mail-open"></ion-icon>
+              </div>
+
+              <a href="mailto:Sevason04@mail.ru" class="item-text">Email : Sevason04@mail.ru</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">товары</p>
+          </li>
+
+          <li>
+            <a href="#shop" class="footer-link">Энергетические напитки</a>
+          </li>
+
+          <li>
+            <a href="#shop" class="footer-link">Перекус</a>
+          </li>
+
+          <li>
+            <a href="#shop" class="footer-link">Охлаждающие напитки</a>
+          </li>
+
+          <li>
+            <a href="#shop" class="footer-link">Горячая еда</a>
+          </li>
+
+
+        </ul>
+
+        <ul class="footer-list">
+
+
+        <div class="footer-wrapper">
+
+          <div class="social-wrapper">
+
+            <p class="footer-list-title">Мы в соц сетях</p>
+
+            <ul class="social-list">
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #3b5998">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="social-link" style="background-color: #55acee">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <figure class="hero-banner img-holder" style="--width: 1; --height: 1;">
+            <img src="{% static "images/Daco_5834311.png" %}" width="7" height="7" alt="hero banner" class="w-100">
+          </figure>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 <a href="#" class="copyright-link">Game-Jaime</a>
+        </p>
+
+        <img src="{% static "images/footer-bottom-img.png" %}" width="340" height="21" loading="lazy" alt=""
+          class="footer-bottom-img">
+
+      </div>
+    </div>
+    
+
+  </footer>
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="caret-up"></ion-icon>
+  </a>
+
+  <script src="{% static "js/script.js" %}" defer></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
